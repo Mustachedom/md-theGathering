@@ -21,7 +21,7 @@ local function spawn()
         else
             model = "a_m_y_juggalo_01"
         end
-        peds[#peds + 1] = CreatePed(0, model, v.x, v.y, v.z, false, true)
+        peds[#peds + 1] = CreatePed(0, model, v.x, v.y, v.z, true, true)
         SetEntityHeading(peds[#peds], v.w)
         FreezeEntityPosition(peds[#peds], true)
         SetEntityInvincible(peds[#peds], true)
@@ -34,7 +34,7 @@ local function spawn()
     end
     for k, v in pairs (Config.Performers) do
         local model = 'a_m_y_juggalo_01'
-        peds[#peds + 1] = CreatePed(0, model, v.x, v.y, v.z, false, true)
+        peds[#peds + 1] = CreatePed(0, model, v.x, v.y, v.z, true, true)
         SetEntityHeading(peds[#peds], v.w)
         FreezeEntityPosition(peds[#peds], true)
         SetEntityInvincible(peds[#peds], true)
